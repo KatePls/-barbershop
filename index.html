@@ -14,9 +14,9 @@
 <header class="header">
   <nav class="navigation">
     <a class="logo link" href="">
-        <img src="./images/Logo.svg" alt="LOGO">
+        <img class="logo-img" src="./images/Logo.svg" alt="LOGO">
     </a>
-    <ul class="list">
+    <ul class="nav-list list">
         <li class="nav-list-item">
             <a class="nav-list-link link" href="#about">О нас</a>
         </li>
@@ -31,35 +31,45 @@
         </li>
       </ul>
   </nav>
-  <a class="nav-list-link link"  href="tel:+380441111111">+38 044 111 11 11</a>
-  <button type="button">онлайн-запись</button>
-</header>   
+  <a class="contact-number link"  href="tel:+380441111111">+38 044 111 11 11</a>
+  <button class="modal-btn" type="button">онлайн-запись</button>
+</header>  
+
 <main>
-    <section>
-        <ul class="list">
-            <li><a class="link" href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a class="link" href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-        </ul>
-        <p lang="en">A hair salon for men in Kyiv</p>
-        <h1 lang="en">BarberShop</h1>    
-        <p>Мы эксперты в модных мужских стрижках. <br> 
-            Работаем быстро, осторожно и со вкусом.</p>
+    <section class="hero">
+        <div class="hero-left-side">
+            <ul class="social-links-list list">
+                <li class="social-links-list-item">
+                    <a class="social-links-list-link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="social-links-list-item">
+                    <a class="social-links-list-link link" href="" target="_blank" rel="noopener noreferrer">Youtube</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="hero-right-side">
+            <p lang="en" class="overtitle">A hair salon for men in Kyiv</p>
+            <h1 lang="en" class="main-title">BarberShop</h1>    
+            <p class="description">Мы эксперты в модных мужских стрижках. <br> 
+                Работаем быстро, осторожно и со вкусом.</p>   
+        </div>
     </section>
     <section id="about">
         <ul class="list">
             <li><img src="./images/image1.jpg" alt="barber shaves a beard" width="270" height="445"></li>
             <li><img src="./images/image2.jpg" alt="hairdresser cuts" width="270" height="445"></li>
         </ul>
-    <p>О НАС</p>
+    <p class="overtitle">О НАС</p>
     <h2>Лучший Барбершоп твоего города</h2> 
-    <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p> 
+    <p class="description">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p> 
     <p>Мы команда, которая никогда не останавливается на достигнутом 
         и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
         то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
     <button type="button">онлайн-запись</button>
     </section>  
     <section id="prices">
-        <p>Проведи время в компании лучших мастеров</p>
+        <p class="overtitle">Проведи время в компании лучших мастеров</p>
         <h2>Услуги и цены</h2>
         <ul class="list">
             <li>
@@ -97,7 +107,7 @@
                 <p>от 200 грн.</p>
             </li>
         </ul>
-        <button type="button">онлайн-запись</button>
+        <button class="modal-btn" type="button">онлайн-запись</button>
     </section>
     <section>
         <ul class="list">
@@ -118,12 +128,12 @@
                 <p>Подарков постоянным клиентам</p>
             </li>
         </ul>
-        <p>старая традиционная школа</p>
+        <p class="overtitle">старая традиционная школа</p>
         <h2>Почему приходят именно к нам?</h2>
         <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
     </section>
     <section id="masters">
-        <p>для настоящих ценителей атмосферы</p>
+        <p class="overtitle">для настоящих ценителей атмосферы</p>
         <h2>Наши мастера</h2>
         <ul class="list">
             <li>
@@ -144,7 +154,7 @@
         </ul>
     </section>
     <section>
-        <p>На латинском языке “барба” означает “борода”</p>
+        <p class="overtitle">На латинском языке “барба” означает “борода”</p>
         <h2 hidden>Галерея</h2>
         <ul class="list">
             <li>
@@ -163,7 +173,7 @@
     </section>
     <section>
         <h2>Онлайн-запись</h2>
-        <button type="button">онлайн-запись</button>
+        <button class="modal-btn" type="button">онлайн-запись</button>
     </section>
     <section id="contacts">
         <h2>Контакты</h2>
@@ -184,11 +194,12 @@
         <p>Ежедневно с 9:00 до 22:00</p>
     </section>
 </main>
+
 <footer>
     <p>&copy; Copyright 2020</p>
     <ul class="list">
-        <li><a class="link" href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a class="link" href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+        <li><a class="social-links-list-link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a class="social-links-list-link link" href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
     </ul>
 </footer> 
 </body>
