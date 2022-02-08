@@ -4,6 +4,7 @@
   --primary-text-color-theme-light:v#555555;
   --secondary-text-color-theme-light: #303030;
   --accent-color: #FF6C00;
+  --backgr-color: #F7F7F7;
   --primary-font-family: "Open Sans", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
 }
@@ -99,10 +100,18 @@ font-weight: 700;
 font-size: 72px;
 line-height: 1.18;
 letter-spacing: 0.05em;
-/*color: var(--secondary-text-color-theme-dark);*/  
+color: var(--secondary-text-color-theme-dark); 
+}
+.hero{
+background-image: url(/images/bg-hero1.jpg);
 }
 /*========== END HERO =======================*/
+/*==========        ==============================*/
 
+/*===========  ABOUT masters  ========================*/
+.masters, footer{
+background-color: var(--backgr-color);
+}
 
 .navigation {
 color: teal;
