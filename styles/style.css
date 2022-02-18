@@ -1,5 +1,6 @@
 :root{
   --primary-text-color-theme-dark:  #9DA4BD;
+  --primary-text-color-theme-dark-alpha:  rgba(157, 164, 189, 0.6);
   --secondary-text-color-theme-dark: #FFFFFF;
   --primary-text-color-theme-light:v#555555;
   --secondary-text-color-theme-light: #303030;
@@ -34,11 +35,15 @@ address{
 }
 
 /*========== START COMPONENTS =======================*/
-.conteiner {
+.container {
 width: 1170px;
 margin-right: auto;
 margin-left: auto;
+/*padding: 0 15px;*/
 }
+.section {
+  padding: 130px 0;
+  }
 .modal-btn{
   padding: 12px 20px;
   font-family: inherit;
@@ -57,13 +62,33 @@ margin-left: auto;
   background-color: var(--accent-color);
   }
 
+.section-title{
+font-family: var(--secondary-font-family);
+font-weight: bold;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+}
+.title-theme-light{
+  color: var(--secondary-text-color-theme-light);
+}
+.title-theme-dark{
+  color: var(--secondary-text-color-theme-dark);
+}
 .overtitle{
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;  
   letter-spacing: 0.1em;
   text-transform: uppercase;  
-  color: var(--secondary-text-color-theme-light);  
+  }
+
+.overtitle-color-light{
+  color: var(--secondary-text-color-theme-light);
+  }
+.overtitle-color-dark{
+  color: var(--primary-text-color-theme-dark-alpha);
   }
     
 .description{
@@ -84,13 +109,16 @@ margin-left: auto;
 .social-links-list-link:hover, .social-links-list-link:focus{
   color: var(--accent-color);
   }
+.social-links-list-item:not(:last-child){
+margin-right: 40px;
+}
 /*=========== END COMPONENTS =======================*/
 
 /*========== START HEADER =======================*/
 .header{
   padding: 32px 0;
 }
-.header-conteiner{
+.header-container{
   display: flex;
   align-items: center;  
 }
@@ -156,6 +184,10 @@ display: flex;
 }
 /*========== END section Best BARBERSHOP =======================*/
 
+/*========== END section Price =======================*/
+
+/*========== END section price =======================*/
+
 /*===========  ABOUT masters  ========================*/
 .masters, footer{
 background-color: var(--backgr-color);
@@ -177,15 +209,39 @@ line-height: 1.39;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color-theme-light);
 }
+/*===========  END masters  ========================*/
 
 /*==========   section GALLERY  ======================*/
-
+.gallery-item:not(:last-child){
+margin-right: 30px;
+}
 /*========== END GALLERY   =======================*/
 
 /*==========    FOOTER ======================*/
 footer{
+padding: 56px 0;
+}
+.footer{
   display: flex;
   justify-content: space-between;
 }
-
+.link-footer{
+  display: flex;
+}
 /*========== END FOOTER    =======================*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/*-----something----------*/
+.bg{
+  background-color: var(--secondary-text-color-theme-light);
+}

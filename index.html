@@ -13,7 +13,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="conteiner header-conteiner">
+    <div class="container header-container">
         <nav class="navigation">
             <a class="logo link" href="">
                 <img class="logo-img" src="./images/Logo.svg" alt="LOGO">
@@ -40,7 +40,7 @@
 
 <main>
     <section class="hero">
-        <div class="conteiner">
+        <div class="container">
             <div class="hero-left-side">
                 <ul class="social-links-list">
                     <li class="social-links-list-item">
@@ -53,7 +53,7 @@
             </div>
             
             <div class="hero-right-side">
-                <p lang="en" class="overtitle">A hair salon for men in Kyiv</p>
+                <p lang="en" class="overtitle overtitle-color-dark">A hair salon for men in Kyiv</p>
                 <h1 lang="en" class="main-title">BarberShop</h1>    
                 <p class="description">Мы эксперты в модных мужских стрижках. <br> 
                     Работаем быстро, осторожно и со вкусом.</p>   
@@ -61,25 +61,28 @@
         </div>
     </section>
 
-    <section class="conteiner best-barbershop" id="about">
-        <ul class="list-images">
-            <li><img src="./images/image1.jpg" alt="barber shaves a beard" width="270" height="445"></li>
-            <li><img src="./images/image2.jpg" alt="hairdresser cuts" width="270" height="445"></li>
-        </ul>
-        <div>
-            <p class="overtitle">О НАС</p>
-            <h2>Лучший Барбершоп твоего города</h2> 
-            <p class="description">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p> 
-            <p>Мы команда, которая никогда не останавливается на достигнутом 
-             и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
-             то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-            <button type="button" class="modal-btn">онлайн-запись</button>
+    <section class="container best-barbershop" id="about">
+        <div class="section">
+            <ul class="list-images">
+                <li><img src="./images/image1.jpg" alt="barber shaves a beard" width="270" height="445"></li>
+                <li><img src="./images/image2.jpg" alt="hairdresser cuts" width="270" height="445"></li>
+            </ul>
+            <div>
+                <p class="overtitle overtitle-color-light">О НАС</p>
+                <h2 class="section-title title-theme-light">Лучший Барбершоп твоего города</h2> 
+                <p class="description">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p> 
+                <p>Мы команда, которая никогда не останавливается на достигнутом 
+                 и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
+                 то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+                <button type="button" class="modal-btn">онлайн-запись</button>
+            </div>
         </div>
     </section>  
 
-    <section class="conteiner" id="prices">
-        <p class="overtitle">Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
+    <section class="section bg" id="prices">
+        <div class="container">
+        <p class="overtitle overtitle-color-dark">Проведи время в компании лучших мастеров</p>
+        <h2 class="section-title title-theme-dark">Услуги и цены</h2>
         <ul class="">
             <li>
                 <p>Мужская стрижка</p>
@@ -117,9 +120,11 @@
             </li>
         </ul>
         <button class="modal-btn" type="button">онлайн-запись</button>
+        </div>
     </section>
 
-    <section class="conteiner">
+    <section class="section">
+      <div class="container">
         <ul class="">
             <li>
                <span>600</span>
@@ -138,108 +143,122 @@
                 <p>Подарков постоянным клиентам</p>
             </li>
         </ul>
-        <p class="overtitle">старая традиционная школа</p>
-        <h2>Почему приходят именно к нам?</h2>
+        <p class="overtitle overtitle-color-light">старая традиционная школа</p>
+        <h2 class="section-title title-theme-light">Почему приходят именно к нам?</h2>
         <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
+      </div>
     </section>
 
-    <section class=" conteiner masters" id="masters">
-        <p class="overtitle">для настоящих ценителей атмосферы</p>
-        <h2>Наши мастера</h2>
-        <ul class="masters-list">
-            <li class="masters-item">
-                <img src="./images/master1.jpg" alt="Барбер Джон Смит" width="370" height="346">
-                <div class="master-about">
-                <h3 class="master-name" lang="en">John Smith</h3>
-                <p lang="en">Extreme Barber</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                </div>
-            </li>
-            <li class="masters-item">
-                <img src="./images/master2.jpg" alt="Барбер Мишель Дое" width="370" height="346">
-                <div class="master-about">
-                <h3 class="master-name" lang="en">Michele Doe</h3>
-                <p lang="en">Extreme Barber</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                </div>
-            </li>
-            <li class="masters-item">
-                <img src="./images/master3.jpg" alt="Барбер Алан Блэк" width="370" height="346">
-                <div class="master-about">
-                <h3 class="master-name" lang="en">Alan Black</h3>
-                <p lang="en">Extreme Barber</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                </div>
-            </li>
-        </ul>
+    <section class="masters section" id="masters">
+        <div class="container">
+            <p class="overtitle overtitle-color-light">для настоящих ценителей атмосферы</p>
+            <h2 class="section-title title-theme-light">Наши мастера</h2>
+            <ul class="masters-list">
+                <li class="masters-item">
+                    <img src="./images/master1.jpg" alt="Барбер Джон Смит" width="370" height="346">
+                    <div class="master-about">
+                    <h3 class="master-name" lang="en">John Smith</h3>
+                    <p lang="en">Extreme Barber</p>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="masters-item">
+                    <img src="./images/master2.jpg" alt="Барбер Мишель Дое" width="370" height="346">
+                    <div class="master-about">
+                    <h3 class="master-name" lang="en">Michele Doe</h3>
+                    <p lang="en">Extreme Barber</p>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="masters-item">
+                    <img src="./images/master3.jpg" alt="Барбер Алан Блэк" width="370" height="346">
+                    <div class="master-about">
+                    <h3 class="master-name" lang="en">Alan Black</h3>
+                    <p lang="en">Extreme Barber</p>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>      
     </section>
 
-    <section class="conteiner gallery">
-        <p class="overtitle">На латинском языке “барба” означает “борода”</p>
-        <h2 class="hidden">Галерея</h2>
+    <section class="section gallery">
+        <div class="container">
+        <p class="overtitle overtitle-color-light">На латинском языке “барба” означает “борода”</p>
+        <h2 class="visually-hidden">Галерея</h2>
         <ul class="list-images">
-            <li>
+            <li class="gallery-item">
                 <img src="./images/photo1.jpg" alt="Барбер стрижет клиента" width="270" height="360">
             </li>
-            <li>
+            <li class="gallery-item">
                 <img src="./images/photo2.jpg" alt="Барбер бреет клиента" width="270" height="360">
             </li>
-            <li>
+            <li class="gallery-item">
                 <img src="./images/photo3.jpg" alt="Барбер готовиться показать клиенту, что получилось" width="270" height="360">
             </li>
-            <li>
+            <li class="gallery-item">
                 <img src="./images/photo4.jpg" alt="Барбер ровняет затылок" width="270" height="360">
             </li>
         </ul>
-    </section>
-    <section class="">
-        <div>
-        <h2>Онлайн-запись</h2>
-        <button class="modal-btn" type="button">онлайн-запись</button>
         </div>
-    
-        <div id="contacts">
-        <h2>Контакты</h2>
-        <address>
-            <ul class="list">
-                <li>
-                    <a class="link" href="https://goo.gl/maps/ocMKSyh8DfDvzpt7A" target="_blank" rel="noopener noreferrer">ул. Васильковская, 7А Киев, 08132</a>  
-                </li>
-                <li>
-                    <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>   
-                </li>
-                <li>
-                    <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-                </li>
-            </ul>
-        </address>
-        <b>время работы</b>
-        <p>Ежедневно с 9:00 до 22:00</p>
+    </section>
+
+    <section class="section bg">
+        <div class="container">
+            <div>
+                <h2 class="section-title title-theme-dark">Онлайн-запись</h2>
+                <button class="modal-btn" type="button">онлайн-запись</button>
+                </div>
+            
+                <div id="contacts">
+                <h2 class="section-title title-theme-dark">Контакты</h2>
+                <address>
+                    <ul class="list">
+                        <li>
+                            <a class="link" href="https://goo.gl/maps/ocMKSyh8DfDvzpt7A" target="_blank" rel="noopener noreferrer">ул. Васильковская, 7А Киев, 08132</a>  
+                        </li>
+                        <li>
+                            <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>   
+                        </li>
+                        <li>
+                            <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <b>время работы</b>
+                <p>Ежедневно с 9:00 до 22:00</p>
+                </div>
         </div>
     </section>
 </main>
 
-<footer class="conteiner">
-    <p class="copyright">&copy; Copyright 2020</p>
-    <ul class="">
-        <li><a class="social-links-list-link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a class="social-links-list-link link" href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-    </ul>
+<footer>
+    <div class="container footer">
+        <p class="copyright">&copy; Copyright 2020</p>
+        <ul class="social-links-list link-footer">
+            <li class="social-links-list-item">
+                <a class="social-links-list-link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li class="social-links-list-item">
+                <a class="social-links-list-link link" href="" target="_blank" rel="noopener noreferrer">Youtube</a>
+            </li>
+        </ul>
+    </div>
 </footer> 
 </body>
 </html>
