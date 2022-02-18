@@ -13,15 +13,34 @@ body{
 font-family: var(--primary-font-family); 
 }
 
-.list {
-list-style: none;
-}
 .link {
 text-decoration: none;
 }
+h1, h2, h3, h4, p{
+margin-top: 0;
+margin-bottom: 0;
+}
+ul, ol{
+margin-top: 0;
+margin-bottom: 0; 
+padding-left: 0;
+list-style: none;
+}
+img {
+display: block;
+}
+address{
+  font-style: normal;
+}
 
 /*========== START COMPONENTS =======================*/
+.conteiner {
+width: 1170px;
+margin-right: auto;
+margin-left: auto;
+}
 .modal-btn{
+  padding: 12px 20px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -34,7 +53,7 @@ text-decoration: none;
   border-radius: 25px;
   cursor: pointer;
   } 
-  .modal-btn:hover, .modal-btn:focus{
+.modal-btn:hover, .modal-btn:focus{
   background-color: var(--accent-color);
   }
 
@@ -68,10 +87,21 @@ text-decoration: none;
 /*=========== END COMPONENTS =======================*/
 
 /*========== START HEADER =======================*/
-.header {
-text-align: center;
+.header{
+  padding: 32px 0;
 }
-
+.header-conteiner{
+  display: flex;
+  align-items: center;  
+}
+.navigation{
+  display: flex;
+  align-items: center;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+}
 .nav-list-link{
 font-weight: 600;
 font-size: 12px;
@@ -83,6 +113,8 @@ letter-spacing: 0.1em;
 color: var(--accent-color);
 }
 .contact-number{
+  margin-left: auto;
+  margin-right: 40px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -91,6 +123,12 @@ color: var(--accent-color);
 .contact-number:hover, .contact-number:focus{
   color: var(--accent-color);
   } 
+.logo{
+    margin-right: 70px;
+  }
+.nav-list-item:not(:last-child){
+  margin-right: 40px;
+}
 /*========== END HEADER =======================*/
 
 /*========== START HERO =======================*/
@@ -104,18 +142,50 @@ color: var(--secondary-text-color-theme-dark);
 }
 .hero{
 background-image: url(/images/bg-hero1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 /*========== END HERO =======================*/
-/*==========        ==============================*/
+
+/*==========   section Best BARBERSHOP  ======================*/
+.list-images{
+display: flex;
+}
+.best-barbershop{
+display: flex;
+}
+/*========== END section Best BARBERSHOP =======================*/
 
 /*===========  ABOUT masters  ========================*/
 .masters, footer{
 background-color: var(--backgr-color);
 }
 
-.navigation {
-color: teal;
+.masters-list{
+display: flex;
+justify-content: space-between;
 }
-.logo{
-  color: teal;
+.master-about{
+padding-top: 30px;
+text-align: center;
 }
+.master-name{
+margin-bottom: 8px;
+font-family: var(--primary-font-family);
+font-size: 18px;
+line-height: 1.39;
+letter-spacing: 0.02em;
+color: var(--secondary-text-color-theme-light);
+}
+
+/*==========   section GALLERY  ======================*/
+
+/*========== END GALLERY   =======================*/
+
+/*==========    FOOTER ======================*/
+footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*========== END FOOTER    =======================*/
