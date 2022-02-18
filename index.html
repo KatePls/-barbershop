@@ -16,7 +16,10 @@
     <div class="container header-container">
         <nav class="navigation">
             <a class="logo link" href="">
-                <img class="logo-img" src="./images/Logo.svg" alt="LOGO">
+                <svg class="logo-img" width="68" height="54">
+                    <use></use>
+                </svg>    
+                <!---<img class="logo-img" src="./images/Logo.svg" alt="LOGO">-->
             </a>
             <ul class="nav-list list">
                 <li class="nav-list-item">
@@ -34,7 +37,7 @@
               </ul>
         </nav>
         <a class="contact-number link"  href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-btn" type="button">онлайн-запись</button>
+        <button class="modal-btn-light" type="button">онлайн-запись</button>
     </div>
 </header>  
 
@@ -61,25 +64,25 @@
         </div>
     </section>
 
-    <section class="container best-barbershop" id="about">
-        <div class="section">
+    <section class="container" id="about">
+        <div class="section best-barbershop">
             <ul class="list-images">
-                <li><img src="./images/image1.jpg" alt="barber shaves a beard" width="270" height="445"></li>
-                <li><img src="./images/image2.jpg" alt="hairdresser cuts" width="270" height="445"></li>
+                <li class="list-images-item"><img src="./images/image1.jpg" alt="barber shaves a beard" width="270" height="445"></li>
+                <li class="list-images-item"><img src="./images/image2.jpg" alt="hairdresser cuts" width="270" height="445"></li>
             </ul>
-            <div>
+            <div class="best-barbershop-description">
                 <p class="overtitle overtitle-color-light">О НАС</p>
                 <h2 class="section-title title-theme-light">Лучший Барбершоп твоего города</h2> 
                 <p class="description">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p> 
                 <p>Мы команда, которая никогда не останавливается на достигнутом 
                  и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
                  то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                <button type="button" class="modal-btn">онлайн-запись</button>
+                <button type="button" class="modal-btn-light">онлайн-запись</button>
             </div>
         </div>
     </section>  
 
-    <section class="section bg" id="prices">
+    <section class="section bg-services" id="prices">
         <div class="container">
         <p class="overtitle overtitle-color-dark">Проведи время в компании лучших мастеров</p>
         <h2 class="section-title title-theme-dark">Услуги и цены</h2>
@@ -119,7 +122,7 @@
                 <p>от 200 грн.</p>
             </li>
         </ul>
-        <button class="modal-btn" type="button">онлайн-запись</button>
+        <button class="modal-btn-dark" type="button">онлайн-запись</button>
         </div>
     </section>
 
@@ -219,13 +222,13 @@
     </section>
 
     <section class="section bg">
-        <div class="container">
-            <div>
+        <div class="container registration">
+            <div class="registration-form">
                 <h2 class="section-title title-theme-dark">Онлайн-запись</h2>
-                <button class="modal-btn" type="button">онлайн-запись</button>
-                </div>
+                <button class="modal-btn-dark" type="button">отправить</button>
+            </div>
             
-                <div id="contacts">
+            <div class="contacts" id="contacts">
                 <h2 class="section-title title-theme-dark">Контакты</h2>
                 <address>
                     <ul class="list">
@@ -242,7 +245,7 @@
                 </address>
                 <b>время работы</b>
                 <p>Ежедневно с 9:00 до 22:00</p>
-                </div>
+            </div>
         </div>
     </section>
 </main>
