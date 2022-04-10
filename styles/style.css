@@ -1,9 +1,11 @@
 :root{
-  --primary-text-color-theme-dark:  #9DA4BD;
-  --primary-text-color-theme-dark-alpha:  rgba(157, 164, 189, 0.6);
+  --primary-text-color-theme-dark:  #9da4bd;
+  --primary-text-color-theme-dark-alpha:  rgba(157, 164, 189, 0.6); 
   --secondary-text-color-theme-dark: #FFFFFF;
-  --primary-text-color-theme-light:v#555555;
+
+  --primary-text-color-theme-light:#555555;
   --secondary-text-color-theme-light: #303030;
+  
   --accent-color: #FF6C00;
   --backgr-color: #F7F7F7;
   --primary-font-family: "Open Sans", sans-serif;
@@ -35,36 +37,42 @@ address{
 }
 
 /*========== START COMPONENTS =======================*/
-.container {
-width: 1170px;
-margin-right: auto;
-margin-left: auto;
-/*padding: 0 15px;*/
-}
 .section {
   padding: 130px 0;
-  }
-.modal-btn-light, .modal-btn-dark{
-  padding: 12px 20px;
+}
+
+.container {
+width: 1200px;
+margin-right: auto;
+margin-left: auto;
+padding: 0 15px;
+}
+
+.modal-btn{
+  min-width: 160px;
+  padding: 12px 16px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  background-color: transparent;
-  border: 1px solid var(--accent-color);
-  box-sizing: border-box;
-  border-radius: 25px;
   cursor: pointer;
+  transition: background-color 250ms linear, color 250ms linear;
   } 
-.modal-btn-light:hover, .modal-btn-light:focus{
+.modal-btn-light{
+color: var(--secondary-text-color-theme-light);
+} 
+.modal-btn-dark{
+color: var(--secondary-text-color-theme-dark);
+  }
+.modal-btn:hover, .modal-btn:focus{
   color: var(--secondary-text-color-theme-dark);
   background-color: var(--accent-color);
   }
-.modal-btn-dark:hover, .modal-btn-dark:focus{
-    background-color: var(--accent-color);
-    }
 
 .modal-btn-dark{
   color: var(--secondary-text-color-theme-dark);
@@ -124,6 +132,7 @@ letter-spacing: 0.05em;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  font-family: var(--primary-font-family);
   }
 .description-theme-light{
     color: var(--primary-text-color-theme-light);
@@ -133,7 +142,17 @@ letter-spacing: 0.05em;
     }
 .description-margin{
 margin-bottom: 20px;
-}    
+} 
+.description-smaller{
+font-size: 14px;
+line-height: 1.86;
+letter-spacing: 0.02em;
+color: var(--primary-text-color-theme-light);
+margin-bottom: 40px;
+}
+.title-margin{
+  margin-bottom: 44px;
+  }
 
 .social-links-list-link{
   font-weight: 600;
@@ -149,7 +168,8 @@ margin-bottom: 20px;
   display: flex;
 }
 .social-links-list-item:not(:last-child){
-margin-right: 40px;}
+margin-right: 40px;
+}
 
 .social-links-list::before {
   display: block;
@@ -161,8 +181,18 @@ margin-right: 40px;}
 /*=========== END COMPONENTS =======================*/
 
 /*========== START HEADER =======================*/
+.logo{
+  border:  2px solid blueviolet;
+  margin-right: 70px;
+  }
+.logo-img{
+  fill: var(--secondary-text-color-theme-light);
+}
+
 .header{
   padding: 32px 0;
+  position: absolute;
+  width: 100%;
 }
 .header-container{
   display: flex;
@@ -187,6 +217,7 @@ color: var(--secondary-text-color-theme-dark);
 color: var(--accent-color);
 }
 .contact-number{
+  color: var(--secondary-text-color-theme-dark);
   margin-left: auto;
   margin-right: 40px;
   font-weight: 600;
@@ -197,9 +228,7 @@ color: var(--accent-color);
 .contact-number:hover, .contact-number:focus{
   color: var(--accent-color);
   } 
-.logo{
-    margin-right: 70px;
-  }
+
 .nav-list-item:not(:last-child){
   margin-right: 40px;
 }
@@ -226,6 +255,11 @@ background-color: var(--secondary-text-color-theme-light);
 flex-grow: 1;
 }
 
+.hero-social-links-list{
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  border: 3px solid tomato;
+}
 /*========== END HERO =======================*/
 
 /*==========   section Best BARBERSHOP  ======================*/
@@ -285,6 +319,41 @@ font-size: 18px;
 line-height: 1.39;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color-theme-light);
+}
+
+.master-description{
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.social-list-link{
+display: flex;
+justify-content: center;
+}
+.social-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-color: var(--secondary-text-color-theme-dark);
+border-radius: 50%;
+width: 44px;
+height: 44px;
+margin: 0;
+}
+.social-item:not(:last-child){
+  margin-right: 10px;
+}
+.social-img{
+fill: var(--secondary-text-color-theme-light);
+}
+.social-item-link:hover .social-img,
+.social-item-link:hover .social-img{
+fill: var(--accent-color);
 }
 /*===========  END masters  ========================*/
 

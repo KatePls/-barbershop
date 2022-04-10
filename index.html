@@ -17,9 +17,8 @@
         <nav class="navigation">
             <a class="logo link" href="">
                 <svg class="logo-img" width="68" height="54">
-                    <use></use>
+                    <use href="./images/sprite.svg#icon-logo"></use>
                 </svg>    
-                <!---<img class="logo-img" src="./images/Logo.svg" alt="LOGO">-->
             </a>
             <ul class="nav-list list">
                 <li class="nav-list-item">
@@ -32,20 +31,20 @@
                     <a class="nav-list-link link" href="#masters">Мастера</a>
                 </li>
                 <li class="nav-list-item">
-                    <a href="#contacts" class="nav-list-link link">Контакты</a>
+                    <a class="nav-list-link link" href="#contacts">Контакты</a>
                 </li>
-              </ul>
+            </ul>
         </nav>
         <a class="contact-number link"  href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-btn-light" type="button">онлайн-запись</button>
+        <button class="modal-btn modal-btn-dark" type="button" data-modal-open>онлайн-запись</button>
     </div>
 </header>  
 
 <main>
     <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
             <div class="hero-left-side">
-                <ul class="social-links-list">
+                <ul class="social-links-list  hero-social-links-list">
                     <li class="social-links-list-item">
                         <a class="social-links-list-link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
                     </li>
@@ -74,10 +73,10 @@
                 <p class="overtitle overtitle-color-light">О НАС</p>
                 <h2 class="section-title title-theme-light">Лучший Барбершоп твоего города</h2> 
                 <p class="description description-theme-light description-margin">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p> 
-                <p class="description description-theme-light">Мы команда, которая никогда не останавливается на достигнутом 
+                <p class="description-smaller description-theme-light">Мы команда, которая никогда не останавливается на достигнутом 
                  и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
                  то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                <button type="button" class="modal-btn-light">онлайн-запись</button>
+                <button type="button" class="modal-btn modal-btn-light">онлайн-запись</button>
             </div>
         </div>
     </section>  
@@ -85,7 +84,7 @@
     <section class="section bg-services" id="prices">
         <div class="container">
         <p class="overtitle overtitle-color-dark">Проведи время в компании лучших мастеров</p>
-        <h2 class="section-title title-theme-dark">Услуги и цены</h2>
+        <h2 class="section-title title-theme-dark title-margin">Услуги и цены</h2>
         <ul class="services-list">
             <li>
                 <p>Мужская стрижка</p>
@@ -120,51 +119,79 @@
                 <p>от 200 грн.</p>
             </li>
         </ul>
-        <button class="modal-btn-dark" type="button">онлайн-запись</button>
+        <button class="modal-btn modal-btn-dark" type="button">онлайн-запись</button>
         </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <ul class="">
-            <li>
-               <span>600</span>
-               <p>Довольных клиентов в день</p>
-            </li>
-            <li>
-                <span>50</span>
-                <p>Наград за отличный сервис </p>
-            </li>
-            <li>
-                <span>20</span>
-                <p>Лучших мастеров Киева </p>
-            </li>
-            <li>
-                <span>100</span>
-                <p>Подарков постоянным клиентам</p>
-            </li>
-        </ul>
-        <p class="overtitle overtitle-color-light">старая традиционная школа</p>
-        <h2 class="section-title title-theme-light">Почему приходят именно к нам?</h2>
-        <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
-      </div>
+          <div>
+            <ul class="">
+                <li>
+                   <span>600</span>
+                   <p>Довольных клиентов в день</p>
+                </li>
+                <li>
+                    <span>50</span>
+                    <p>Наград за отличный сервис </p>
+                </li>
+                <li>
+                    <span>20</span>
+                    <p>Лучших мастеров Киева </p>
+                </li>
+                <li>
+                    <span>100</span>
+                    <p>Подарков постоянным клиентам</p>
+                </li>
+            </ul>
+          </div>
+        <div>
+            <p class="overtitle overtitle-color-light">старая традиционная школа</p>
+            <h2 class="section-title title-theme-light">Почему приходят именно к нам?</h2>
+            <p class="description">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
+          </div>
+        </div>
     </section>
 
     <section class="masters section" id="masters">
         <div class="container">
             <p class="overtitle overtitle-color-light">для настоящих ценителей атмосферы</p>
-            <h2 class="section-title title-theme-light">Наши мастера</h2>
+            <h2 class="section-title title-theme-light title-margin">Наши мастера</h2>
             <ul class="masters-list">
                 <li class="masters-item">
                     <img src="./images/master1.jpg" alt="Барбер Джон Смит" width="370" height="346">
                     <div class="master-about">
                     <h3 class="master-name" lang="en">John Smith</h3>
-                    <p lang="en">Extreme Barber</p>
-                    <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                    <p class="master-description" lang="en">Extreme Barber</p>
+                    <ul class="social-list-link">
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                        </li>
                     </ul>
                     </div>
                 </li>
@@ -172,12 +199,36 @@
                     <img src="./images/master2.jpg" alt="Барбер Мишель Дое" width="370" height="346">
                     <div class="master-about">
                     <h3 class="master-name" lang="en">Michele Doe</h3>
-                    <p lang="en">Extreme Barber</p>
-                    <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                    <p class="master-description" lang="en">Extreme Barber</p>
+                    <ul class="social-list-link">
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                        </li>
                     </ul>
                     </div>
                 </li>
@@ -185,12 +236,36 @@
                     <img src="./images/master3.jpg" alt="Барбер Алан Блэк" width="370" height="346">
                     <div class="master-about">
                     <h3 class="master-name" lang="en">Alan Black</h3>
-                    <p lang="en">Extreme Barber</p>
-                    <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                    <p class="master-description" lang="en">Extreme Barber</p>
+                    <ul class="social-list-link">
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item-link" href="">
+                            <svg class="social-img" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                        </li>
                     </ul>
                     </div>
                 </li>
@@ -200,7 +275,7 @@
 
     <section class="section gallery">
         <div class="container">
-        <p class="overtitle overtitle-color-light">На латинском языке “барба” означает “борода”</p>
+        <p class="overtitle overtitle-color-light title-margin">На латинском языке “барба” означает “борода”</p>
         <h2 class="visually-hidden">Галерея</h2>
         <ul class="list-images">
             <li class="gallery-item">
@@ -223,7 +298,7 @@
         <div class="container registration">
             <div class="registration-form">
                 <h2 class="section-title title-theme-dark">Онлайн-запись</h2>
-                <button class="modal-btn-dark" type="button">отправить</button>
+                <button class="modal-btn modal-btn-dark" type="button">отправить</button>
             </div>
             
             <div class="contacts" id="contacts">
